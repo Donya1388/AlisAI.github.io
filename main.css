@@ -17,17 +17,8 @@ font size, windows scale */
   --color-stormblue: #4d5971;
   --color-tint: #7384a6;
   --color-light-tint: #b5c1d9;
-  --color-light-tint1: #cfd7ed;
-  --color-light-tint2: #c4c8d2;
   --color-white: #ffffff;
   --color-gray: #f2f2f2;
-
-  --height-screenfit: 1107px;
-
-  /* line-height */
-  --heading-line-height: 1.2;
-  --body-line-height: 1.4;
-  --article-line-height: 1.58;
 }
 
 /*-------------------------------*/
@@ -93,22 +84,6 @@ h1 {
   box-shadow: inset 0px 0px 5px #c1c1c1;
   outline: none;
 }
-
-/* .headTxt-font {
-  font-family: Caveat;
-  font-size: 70px;
-  text-align: center;
-  max-width: 340px;
-} */
-
-/* @mixin txtCrop($line-height) {
-  &::before {
-    content: "";
-    display: block;
-    height: 0;
-    width: 0;
-    margin-top: calc((1 - #{$line-height}) * 0.5em);
-  } */
 
 /*-------------------------------*/
 /*------------ HEADER -----------*/
@@ -192,7 +167,7 @@ h1 {
 }
 
 /*-------------------------------*/
-/*---------- Hero Page ----------*/
+/*---------- Head Banner---------*/
 /*-------------------------------*/
 
 #head-banner {
@@ -243,7 +218,6 @@ h1 {
 
   cursor: pointer;
   box-shadow: -1px 10px 10px 1px rgba(0, 0, 0, 0.3);
-  /*    transition: background-color .3s;*/
 
   outline: none;
   border: 0;
@@ -306,7 +280,7 @@ h1 {
   background: var(--color-navy);
 }
 
-/* not having height here is a trick by using padding top instead. */
+/* Using padding-top instead of height. */
 .about--section__image-property {
   position: absolute;
   right: 0;
@@ -778,44 +752,17 @@ h1 {
   background-image: url(Images-ForWeb/Tweeter.png);
 }
 
-/* .footer--right__description {
-  float: right;
-  width: 75%;
-  height: auto;
-  margin-top: 1em;
-  margin-right: 3.6em;
-
-  font-size: 1vw;
-  text-align: justify;
-
-  color: var(--color-white);
-  background-color: burlywood;
-} */
-
 .footer--right__copy-right-duration {
-  /* position: relative; */
   display: inline-block;
   top: 82%;
   margin-left: auto;
   margin-right: auto;
-  /* display: block;
-  text-align: center;
-  transform: translate(48%, -50%); */
   color: #fffcfc;
-  /* z-index: 2; */
 }
 
 .font-bold {
   font-weight: bold;
 }
-
-/* .footer--right__copy-right-duration {
-  position: absolute;
-  bottom: 1.5em;
-  left: 50%;
-  transform: translate(-50%);
-  color: #fffcfc;
-} */
 
 @media (max-width: 600px) {
   body {
@@ -938,7 +885,7 @@ h1 {
 
   .testimonial--grid {
     grid-template-columns: repeat(auto-fill, 230px);
-    padding-top: 105%;
+    padding-top: 125%;
   }
 
   .testimonial__head-text {
