@@ -25,22 +25,6 @@ if (isset($_POST['myEmail']) && $_POST['myEmail'] !='') {
 	$subject = "Ali's website contact";
 	$mailheader = "From: $email \r\n";
 	mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-	echo "Thank You!";
-
-	function clean_string($string) {
-			$bad = array("content-type", "bcc:", "to:", "cc:", "href");
-			return str_replace($bad, "", $string);
-		}
-		
-	$email_message .= "Name: " . clean_string($name) . "\n";
-	$email_message .= "Email: " . clean_string($email) . "\n";
-	$email_message .= "Message: " . clean_string($message) . "\n";
-	
-	// create email headers
-    $headers = 'From: ' . $email . "\r\n" .
-        'Reply-To: ' . $email . "\r\n" .
-        'X-Mailer: PHP/' . phpversion();
-    @mail($email_to, $email_subject, $email_message, $headers);
 ?>
 
 	<!-- include your success message below -->
