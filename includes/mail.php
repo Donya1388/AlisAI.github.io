@@ -21,7 +21,7 @@ if (isset($_POST['myEmail']) && $_POST['myEmail'] !='') {
 		}
 
 	$formcontent="From: $name \n Message: $message";
-	$recipient = "donya.mashalapour@gmail.com";
+	$recipient = "ali.prg@gmail.com";
 	$subject = "Ali's website contact";
 	$mailheader = "From: $email \r\n";
 	mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
